@@ -167,6 +167,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .order-button:is(:hover, :focus){
     background-color: #404BBF;}
 
+    .data-modal
+
 /* portfolio ======================================= */
 .buttons {
     padding: 12px 24px;
