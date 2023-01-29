@@ -35,18 +35,20 @@ button{cursor: pointer;}
 
 .current{
     position: relative;
-
 }
+
 .current::after{
     content: '';
     position: absolute;
     bottom: -26px;
     right: 0;
-    /* transform: translatey(26px); */
     height: 4px;
     width: 100%;
     background: #404BBF;
     border-radius: 2px;
+}
+.portfolio{
+    color: #404BBF;
 }
 
 /* _________________________________________________________NAVi */
@@ -568,15 +570,35 @@ color: #FFFFFF;}
     border-radius: 4px;
 }
 .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);;
+    width: 24px;
+    height: 24px;
+    background-color:  #E7E9FC;
 }
 
     .close-modal-button{
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 100%);
-        width: 24px;
-        height: 24px;
-        fill: #E7E9FC;
+        width: 8px;
+        height: 8px;
+        
+        fill: #000000;
+}
+
+.modal-close:is(:hover,:focus,:active){
+
+    background-color: #404BBF;
+}
+
+.modal-close:is(:hover, :focus, :active) .close-modal-button{
+    fill: #FFFFFF;
 }
